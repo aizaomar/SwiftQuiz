@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="235" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="Ny3-3g-vio">
             <objects>
-                <viewController id="btz-k4-3u1" sceneMemberID="viewController">
+                <viewController id="btz-k4-3u1" customClass="QuestionViewController" customModule="SwiftQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6OV-Nh-AxK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
