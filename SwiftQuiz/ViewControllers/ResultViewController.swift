@@ -9,6 +9,14 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    
+    @IBOutlet var resultPic: UIImageView!
+    
+    @IBOutlet var resultTextLabel: UILabel!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
