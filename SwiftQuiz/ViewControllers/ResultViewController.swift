@@ -9,11 +9,12 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    
+    // MARK: - IB Outlets
     @IBOutlet var resultPic: UIImageView!
-    
     @IBOutlet var resultTextLabel: UILabel!
     
+    // MARK: - Public Properties
+    var answers: [Answer]!
     
     
     

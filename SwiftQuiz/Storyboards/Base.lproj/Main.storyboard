@@ -77,6 +77,10 @@
                             <constraint firstItem="BA7-bL-KWn" firstAttribute="trailing" secondItem="Ha6-vH-hY9" secondAttribute="trailing" constant="20" id="kcT-OY-WjN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultPic" destination="cGY-rL-odZ" id="Poh-oX-HXI"/>
+                        <outlet property="resultTextLabel" destination="wCy-zw-TjI" id="WcA-dX-lom"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnA-ro-m7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
