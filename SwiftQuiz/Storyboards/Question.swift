@@ -15,8 +15,3 @@ struct Question {
         return []
     }
 }
-
-struct Answer {
-    let title: String
-    let isCorrect: Bool
-}

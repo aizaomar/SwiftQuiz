@@ -13,9 +13,9 @@ class DataManager {
     let questions = [
         Question(title: "Вопрос 1", answers: [
             Answer(title: "Ответ 1", isCorrect: true),
-            Answer(title: "Ответ 2", isCorrect: false),
-            Answer(title: "Ответ 3", isCorrect: false),
-            Answer(title: "Ответ 4", isCorrect: false)
+            Answer(title: "Ответ 2"),
+            Answer(title: "Ответ 3"),
+            Answer(title: "Ответ 4")
         ]
         )
     ]
