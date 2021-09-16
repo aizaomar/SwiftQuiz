@@ -12,6 +12,6 @@ struct Question {
     let answers: [Answer]
     
     static func getQuestion() -> [Question] {
-        DataManager.shared.questions
+        DataManager.shared.questions.shuffled()
     }
 }
