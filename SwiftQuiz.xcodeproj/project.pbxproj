@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12049A9026F2831C007242D6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12049A8F26F2831C007242D6 /* DataManager.swift */; };
 		65B42CFD26F11FF10064553A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B42CFC26F11FF10064553A /* AppDelegate.swift */; };
 		65B42CFF26F11FF10064553A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B42CFE26F11FF10064553A /* SceneDelegate.swift */; };
 		65B42D0426F11FF10064553A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B42D0226F11FF10064553A /* Main.storyboard */; };
 		65B42D0626F11FF40064553A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B42D0526F11FF40064553A /* Assets.xcassets */; };
 		65B42D0926F11FF40064553A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B42D0726F11FF40064553A /* LaunchScreen.storyboard */; };
 		65B42D1926F12A630064553A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 65B42D1826F12A630064553A /* .gitignore */; };
+		A59891EA26F1C2C700090C4E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59891E926F1C2C700090C4E /* Question.swift */; };
+		A5B39A6026F2885500CD61A0 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B39A5F26F2885500CD61A0 /* Answer.swift */; };
 		B53AF36226F12CB200EBFD88 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AF36126F12CB200EBFD88 /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12049A8F26F2831C007242D6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		65B42CF926F11FF10064553A /* SwiftQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B42CFC26F11FF10064553A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65B42CFE26F11FF10064553A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		65B42D0A26F11FF40064553A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65B42D1826F12A630064553A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B53AF36126F12CB200EBFD88 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		A59891E926F1C2C700090C4E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		A5B39A5F26F2885500CD61A0 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,9 @@
 			children = (
 				65B42D0226F11FF10064553A /* Main.storyboard */,
 				65B42D0726F11FF40064553A /* LaunchScreen.storyboard */,
+				12049A8F26F2831C007242D6 /* DataManager.swift */,
+				A59891E926F1C2C700090C4E /* Question.swift */,
+				A5B39A5F26F2885500CD61A0 /* Answer.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -189,6 +198,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59891EA26F1C2C700090C4E /* Question.swift in Sources */,
+				12049A9026F2831C007242D6 /* DataManager.swift in Sources */,
+				A5B39A6026F2885500CD61A0 /* Answer.swift in Sources */,
 				65B42CFD26F11FF10064553A /* AppDelegate.swift in Sources */,
 				65B42CFF26F11FF10064553A /* SceneDelegate.swift in Sources */,
 				B53AF36226F12CB200EBFD88 /* QuestionViewController.swift in Sources */,
