@@ -12,6 +12,6 @@ struct Question {
     let answers: [Answer]
     
     static func getQuestion() -> [Question] {
-        return []
+        DataManager.shared.questions
     }
 }
