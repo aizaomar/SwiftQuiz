@@ -98,9 +98,6 @@
 			children = (
 				65B42D0226F11FF10064553A /* Main.storyboard */,
 				65B42D0726F11FF40064553A /* LaunchScreen.storyboard */,
-				12049A8F26F2831C007242D6 /* DataManager.swift */,
-				A59891E926F1C2C700090C4E /* Question.swift */,
-				A5B39A5F26F2885500CD61A0 /* Answer.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -116,6 +113,8 @@
 		65B42D1426F121050064553A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A59891E926F1C2C700090C4E /* Question.swift */,
+				A5B39A5F26F2885500CD61A0 /* Answer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,6 +122,7 @@
 		65B42D1526F121120064553A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				12049A8F26F2831C007242D6 /* DataManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
