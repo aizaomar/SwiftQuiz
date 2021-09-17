@@ -15,7 +15,7 @@ class QuestionViewController: UIViewController {
     
     @IBOutlet var answersButton: [UIButton]!
     
-    private let questions = Question.getQuestions()
+    private let questions = Question.getQuestion()
     private var questionIndex = 0
     private var answersChosen: [Answer] = []
     private var currentAnswers: [Answer] {
