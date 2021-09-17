@@ -22,18 +22,26 @@ class ResultViewController: UIViewController {
         navigationItem.hidesBackButton = true
         updateResult()
     }
- 
+    
     // MARK: - Private methods
     private func updateResult () {
-        var amountOfCorrectAnswers: [Answer: Int] = [:]
+        var amountOfTypeAnswers: [Answer: Int] = [:]
+        let answers = answers.map { $0.isCorrect }
         
-        
-        updateUI(with: ???)
+        for answer in answers {
+            if let answersTypeCount = amountOfTypeAnswers[answer] {
+                amountOfTypeAnswers.updateValue(answersTypeCount + 1, forKey: answer)
+            } else {
+                amountOfTypeAnswers[answer] = 1
+            }
+            
+            updateUI(with: Answer?)
+        }
     }
     
     private func updateUI(with answer: Answer?) {
         resultPic.image = // фото из модели
-        resultTextLabel.text = // "Вы ответили правильно на \(кол-во вопросов) из \(кол-ва вопросов)"
+            resultTextLabel.text = // "Вы ответили правильно на \(кол-во вопросов) из \(кол-ва вопросов)"
     }
     
 }
