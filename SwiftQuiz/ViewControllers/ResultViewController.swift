@@ -8,7 +8,7 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+    
     // MARK: - IB Outlets
     @IBOutlet var resultPic: UIImageView!
     @IBOutlet var resultTextLabel: UILabel!
@@ -16,32 +16,28 @@ class ResultViewController: UIViewController {
     // MARK: - Public Properties
     var answers: [Answer]!
     
+    // MARK: - Private Properties
+    private var correctAnswerCount = 0
+    
     // MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.hidesBackButton = true
         updateResult()
     }
     
     // MARK: - Private methods
     private func updateResult () {
-        var amountOfTypeAnswers: [Answer: Int] = [:]
-        let answers = answers.map { $0.isCorrect }
         
         for answer in answers {
-            if let answersTypeCount = amountOfTypeAnswers[answer] {
-                amountOfTypeAnswers.updateValue(answersTypeCount + 1, forKey: answer)
-            } else {
-                amountOfTypeAnswers[answer] = 1
+            if answer.isCorrect {
+                correctAnswerCount += 1
             }
-            
-            updateUI(with: Answer?)
         }
     }
-    
-    private func updateUI(with answer: Answer?) {
-        resultPic.image = // фото из модели
-            resultTextLabel.text = // "Вы ответили правильно на \(кол-во вопросов) из \(кол-ва вопросов)"
+        private func updateUI() {
+//            resultPic.image = // фото из модели
+            resultTextLabel.text = "Вы ответили правильно на \(correctAnswerCount) из \(answers.count)"
+        }
     }
-    
-}
+
+
