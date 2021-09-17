@@ -34,6 +34,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="bhf-j7-XgD"/>
+                    <connections>
+                        <segue destination="MNA-oR-nHn" kind="presentation" modalPresentationStyle="fullScreen" id="IwX-bZ-Ifg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5C-25-Qpe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
