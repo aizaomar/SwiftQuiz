@@ -33,7 +33,7 @@ class QuestionViewController: UIViewController {
         setupButtons()
     }
     
-    @IBAction func answerButtonsTapper(_ sender: UIButton) {
+    @IBAction func answerButtonsTapped(_ sender: UIButton) {
         guard let buttonIndex = answersButton.firstIndex(of: sender) else { return }
         let currentAnswer = currentAnswers[buttonIndex]
         answersChosen.append(currentAnswer)
@@ -95,7 +95,7 @@ extension QuestionViewController {
     }
     
     private func alertController() {
-        let alertController = UIAlertController(title: "Ответ не верный", message: "Правильный ответ", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Подсказка", message: "Правильный ответ", preferredStyle: .alert)
         let OkAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
         alertController.addAction(OkAction)
         present(alertController, animated: true, completion: nil)

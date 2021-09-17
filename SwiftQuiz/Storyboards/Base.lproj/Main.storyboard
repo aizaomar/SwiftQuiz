@@ -74,28 +74,28 @@
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="35.5"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="answerButtonsTapper:" destination="btz-k4-3u1" eventType="touchUpInside" id="rdH-rO-ADL"/>
+                                            <action selector="answerButtonsTapped:" destination="btz-k4-3u1" eventType="touchUpInside" id="rdH-rO-ADL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBU-Lq-Ylr">
                                         <rect key="frame" x="0.0" y="45.5" width="288" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="answerButtonsTapper:" destination="btz-k4-3u1" eventType="touchUpInside" id="QPf-Pl-s4e"/>
+                                            <action selector="answerButtonsTapped:" destination="btz-k4-3u1" eventType="touchUpInside" id="QPf-Pl-s4e"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNs-wf-CVi">
                                         <rect key="frame" x="0.0" y="90.5" width="288" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="answerButtonsTapper:" destination="btz-k4-3u1" eventType="touchUpInside" id="yNk-hH-9Om"/>
+                                            <action selector="answerButtonsTapped:" destination="btz-k4-3u1" eventType="touchUpInside" id="yNk-hH-9Om"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSM-gB-BbW">
                                         <rect key="frame" x="0.0" y="135.5" width="288" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="answerButtonsTapper:" destination="btz-k4-3u1" eventType="touchUpInside" id="rPe-FJ-M5z"/>
+                                            <action selector="answerButtonsTapped:" destination="btz-k4-3u1" eventType="touchUpInside" id="rPe-FJ-M5z"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -145,13 +145,25 @@
                     <view key="view" contentMode="scaleToFill" id="Tk4-d3-hxU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FbY-fm-TiG">
+                                <rect key="frame" x="60" y="234" width="201" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="BA7-bL-KWn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="resultTextLabel" destination="FbY-fm-TiG" id="CxK-nf-qex"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnA-ro-m7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2397.1014492753625" y="93.75"/>
+            <point key="canvasLocation" x="2396.25" y="92.957746478873247"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8wH-9c-o3e">

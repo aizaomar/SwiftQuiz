@@ -23,6 +23,7 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateResult()
+        updateUI()
     }
     
     // MARK: - Private methods
