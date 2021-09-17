@@ -16,16 +16,16 @@ class ResultViewController: UIViewController {
     // MARK: - Public Properties
     var answers: [Answer]!
     
-    
-    
+    // MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
-  
+        navigationItem.hidesBackButton = true
     }
  
-    
-    
-    
+    // MARK: - Private methods
+    private func updateUI(with answer: Answer?) {
+        resultPic.image = // фото из модели
+        resultTextLabel.text = // "Вы ответили правильно на \(кол-во вопросов) из \(кол-ва вопросов)"
+    }
     
 }
