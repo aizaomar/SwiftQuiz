@@ -20,12 +20,15 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        updateResult()
     }
  
     // MARK: - Private methods
     private func updateResult () {
         var amountOfCorrectAnswers: [Answer: Int] = [:]
         
+        
+        updateUI(with: ???)
     }
     
     private func updateUI(with answer: Answer?) {
