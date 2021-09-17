@@ -17,8 +17,8 @@ class QuestionViewController: UIViewController {
     
     private let questions = Question.getQuestions()
     private var questionIndex = 0
-    private var answersChosen: [String] = []
-    private var currentAnswers: Answers {
+    private var answersChosen: [Answer] = []
+    private var currentAnswers: [Answer] {
         questions[questionIndex].answers
     }
     
@@ -35,10 +35,9 @@ class QuestionViewController: UIViewController {
     
     @IBAction func answerButtonsTapper(_ sender: UIButton) {
         guard let buttonIndex = answersButton.firstIndex(of: sender) else { return }
-        let currentAnswer = currentAnswers.title[buttonIndex]
+        let currentAnswer = currentAnswers[buttonIndex]
         answersChosen.append(currentAnswer)
         
-        updateUI()
         nextQuestion()
     }
     
@@ -71,9 +70,9 @@ extension QuestionViewController {
         showCurrentAnswer(for: currentQuestion.answers)
     }
     
-    private func showCurrentAnswer(for answers: Answers) {
-        for (button, title) in zip(answersButton, answers.title) {
-            button.setTitle(title, for: .normal)
+    private func showCurrentAnswer(for answers: [Answer]) {
+        for (button, answer) in zip(answersButton, answers) {
+            button.setTitle(answer.title, for: .normal)
         }
     }
     
