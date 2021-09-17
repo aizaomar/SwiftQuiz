@@ -23,6 +23,11 @@ class ResultViewController: UIViewController {
     }
  
     // MARK: - Private methods
+    private func updateResult () {
+        var amountOfCorrectAnswers: [Answer: Int] = [:]
+        
+    }
+    
     private func updateUI(with answer: Answer?) {
         resultPic.image = // фото из модели
         resultTextLabel.text = // "Вы ответили правильно на \(кол-во вопросов) из \(кол-ва вопросов)"
