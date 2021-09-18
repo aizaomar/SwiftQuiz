@@ -47,6 +47,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12DD360F26F5DD1A0049BD5C /* ImageForResult */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageForResult;
+			sourceTree = "<group>";
+		};
 		65B42CF026F11FF10064553A = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				65B42D0526F11FF40064553A /* Assets.xcassets */,
+				12DD360F26F5DD1A0049BD5C /* ImageForResult */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
