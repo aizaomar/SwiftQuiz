@@ -30,7 +30,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkH-Yy-McO">
-                                <rect key="frame" x="123" y="525.5" width="168" height="48"/>
+                                <rect key="frame" x="123" y="512.5" width="168" height="48"/>
                                 <color key="backgroundColor" red="1" green="0.74439977660932155" blue="0.45856073445160483" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="НАЧАТЬ">
@@ -48,7 +48,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mkH-Yy-McO" firstAttribute="top" secondItem="6o7-Gb-EgT" secondAttribute="bottom" constant="58" id="CNa-I5-IiZ"/>
+                            <constraint firstItem="mkH-Yy-McO" firstAttribute="top" secondItem="6o7-Gb-EgT" secondAttribute="bottom" constant="45" id="CNa-I5-IiZ"/>
                             <constraint firstItem="6o7-Gb-EgT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-0.5" id="EfB-Pt-c1M"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6o7-Gb-EgT" secondAttribute="trailing" constant="35" id="T5g-i5-6Oa"/>
                             <constraint firstItem="TiQ-K2-lvs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VOp-ZL-1xd"/>
