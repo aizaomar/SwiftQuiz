@@ -27,9 +27,7 @@ class QuestionViewController: UIViewController {
         updateUI()
         view.backgroundColor = .systemGray6
         questionLabel.backgroundColor = .white
-    }
-    
-    override func viewWillLayoutSubviews() {
+        
         setupButtons()
     }
     
@@ -39,10 +37,6 @@ class QuestionViewController: UIViewController {
         answersChosen.append(currentAnswer)
         
         nextQuestion()
-    }
-    
-    @IBAction func hintButtonTapped(_ sender: Any) {
-        alertController()
     }
     
     // MARK: - Navigation
