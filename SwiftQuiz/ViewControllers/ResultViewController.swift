@@ -52,7 +52,9 @@ class ResultViewController: UIViewController {
                 resultPic.image = UIImage(named: "HappyJpeg")
             }
             
-            resultTextLabel.text = ", вы ответили правильно на \(correctAnswerCount) из \(answers.count)"
+            let defaults = UserDefaults.standard
+            let userName = defaults.string(forKey: "userName") ?? ""
+            resultTextLabel.text = "\(userName), вы ответили правильно на \(correctAnswerCount) из \(answers.count)"
             
         }
     }
