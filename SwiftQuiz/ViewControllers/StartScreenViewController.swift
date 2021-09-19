@@ -20,17 +20,6 @@ class StartScreenViewController: UIViewController {
 
 
 
-//For Dima. В func updateUI() прописать свойства и подставить интерполяцию \(userName) в resultTextLabel.text = ...
-//
-//
-//  примерно так
-//
-//  private func updateUI() {
-//
+
 //  let defaults = UserDefaults.standard
 //  let userName = defaults.string(forKey: "userName") ?? ""
-//
-//  resultTextLabel.text = "\(userName),Вы ответили
-//  правильно на \(correctAnswerCount) из \(answers.count)"
-//
-//

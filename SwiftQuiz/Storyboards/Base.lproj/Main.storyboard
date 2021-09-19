@@ -34,6 +34,7 @@
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="startTestButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="3AS-oz-etj"/>
                                             <segue destination="UxC-hf-Qkr" kind="presentation" id="BJL-H3-dmw"/>
                                         </connections>
                                     </button>
@@ -52,6 +53,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hOo-m4-OxD" secondAttribute="trailing" constant="30" id="xfk-nL-RPI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userNameTextField" destination="6o7-Gb-EgT" id="upc-jD-Rgt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
