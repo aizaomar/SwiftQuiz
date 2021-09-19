@@ -27,6 +27,7 @@ class QuestionViewController: UIViewController {
         updateUI()
         view.backgroundColor = .systemGray6
         questionLabel.backgroundColor = .white
+        
         setupButtons()
     }
     
@@ -40,8 +41,8 @@ class QuestionViewController: UIViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let resultVC = segue.destination as? ResultViewController else { return }
-//        resultVC.answers = answersChosen
+        guard let resultVC = segue.destination as? ResultViewController else { return }
+        resultVC.answers = answersChosen
     }
 }
 
