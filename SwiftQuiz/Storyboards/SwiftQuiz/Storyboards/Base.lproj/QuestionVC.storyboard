@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o7G-Bt-YP6">
-                                <rect key="frame" x="16" y="44" width="382" height="4"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="4"/>
                             </progressView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oeJ-7f-mII">
                                 <rect key="frame" x="16" y="462.5" width="382" height="268.5"/>
@@ -64,10 +64,10 @@
                         <constraints>
                             <constraint firstItem="ohl-9G-TPr" firstAttribute="trailing" secondItem="nw3-ih-cY1" secondAttribute="trailing" constant="16" id="7Jf-he-qTu"/>
                             <constraint firstItem="ohl-9G-TPr" firstAttribute="trailing" secondItem="oeJ-7f-mII" secondAttribute="trailing" constant="16" id="G20-F5-Sxm"/>
-                            <constraint firstItem="ohl-9G-TPr" firstAttribute="trailing" secondItem="o7G-Bt-YP6" secondAttribute="trailing" constant="16" id="YRt-Zg-Sxl"/>
+                            <constraint firstItem="ohl-9G-TPr" firstAttribute="trailing" secondItem="o7G-Bt-YP6" secondAttribute="trailing" id="YRt-Zg-Sxl"/>
                             <constraint firstItem="oeJ-7f-mII" firstAttribute="height" secondItem="6OV-Nh-AxK" secondAttribute="height" multiplier="0.3" id="Zvk-46-71n"/>
                             <constraint firstItem="nw3-ih-cY1" firstAttribute="height" secondItem="6OV-Nh-AxK" secondAttribute="height" multiplier="0.4" id="bmK-iA-Axs"/>
-                            <constraint firstItem="o7G-Bt-YP6" firstAttribute="leading" secondItem="ohl-9G-TPr" secondAttribute="leading" constant="16" id="cVR-a2-xLA"/>
+                            <constraint firstItem="o7G-Bt-YP6" firstAttribute="leading" secondItem="ohl-9G-TPr" secondAttribute="leading" id="cVR-a2-xLA"/>
                             <constraint firstItem="oeJ-7f-mII" firstAttribute="top" secondItem="nw3-ih-cY1" secondAttribute="bottom" constant="40" id="kjM-49-92M"/>
                             <constraint firstItem="nw3-ih-cY1" firstAttribute="leading" secondItem="ohl-9G-TPr" secondAttribute="leading" constant="16" id="kvr-rS-ISC"/>
                             <constraint firstItem="oeJ-7f-mII" firstAttribute="leading" secondItem="ohl-9G-TPr" secondAttribute="leading" constant="16" id="lh3-GY-6rs"/>
