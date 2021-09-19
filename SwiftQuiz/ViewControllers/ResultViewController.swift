@@ -25,6 +25,9 @@ class ResultViewController: UIViewController {
         updateResult()
         updateUI()
     }
+    // MARK: - IB actions
+    @IBAction func tryAgainButton(_ sender: Any) {
+    }
     
     // MARK: - Private methods
     private func updateResult () {
