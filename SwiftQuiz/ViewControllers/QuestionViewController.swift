@@ -25,8 +25,10 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        view.backgroundColor = .systemGray6
+        view.backgroundColor = .systemGray2
         questionLabel.backgroundColor = .white
+        questionLabel.layer.cornerRadius = 25
+        questionLabel.layer.masksToBounds = true
         
         setupButtons()
     }

@@ -63,7 +63,7 @@ class ResultViewController: UIViewController {
         
         switch correctAnswerCount {
         case 0...5:
-            resultTextLabel.text = "\(userName), \(ResultGag.badscore.rawValue) ты ответил правильно всего на \(correctAnswerCount) из \(answers.count) "
+            resultTextLabel.text = "\(userName), \(ResultGag.badscore.rawValue) Ты ответил правильно всего на \(correctAnswerCount) из \(answers.count) "
         case 5...14:
             resultTextLabel.text = "Твой результат, \(userName), \(correctAnswerCount) из \(answers.count), \(ResultGag.averagescore.rawValue)"
         default:

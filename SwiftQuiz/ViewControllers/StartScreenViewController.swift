@@ -15,6 +15,8 @@ class StartScreenViewController: UIViewController {
        
         if userNameTextField.text == "" {
             alertController()
+        } else {
+        performSegue(withIdentifier: "showQuestionsVC", sender: nil)
         }
         
         let defaults = UserDefaults.standard
@@ -25,7 +27,7 @@ class StartScreenViewController: UIViewController {
     
     private func alertController() {
         let alertController = UIAlertController(title: "А как же имя?", message: "Представтесь", preferredStyle: .alert)
-        let OkAction = UIAlertAction(title: "Ok", style: .cancel)
+        let OkAction = UIAlertAction(title: "Ok", style: .default)
         alertController.addAction(OkAction)
         present(alertController, animated: true)
         
@@ -38,11 +40,12 @@ extension StartScreenViewController: UITextFieldDelegate {
         view.endEditing(true)
     }
     
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//            startTestButtonPressed()
-//            performSegue(withIdentifier: "navVC", sender: nil)
-//        }
-//        return true
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            startTestButtonPressed()
+            performSegue(withIdentifier: "showQuestionsVC", sender: nil)
+        return true
+    }
+
     }
 
 
