@@ -12,9 +12,9 @@ class StartScreenViewController: UIViewController {
     @IBOutlet var userNameTextField: UITextField!
     
     @IBAction func startTestButtonPressed() {
-       
-        if userNameTextField.text == "" {
+        guard userNameTextField.text != nil else {
             alertController()
+            return
         }
         
         let defaults = UserDefaults.standard
@@ -24,8 +24,17 @@ class StartScreenViewController: UIViewController {
     
     
     private func alertController() {
-        let alertController = UIAlertController(title: "А как же имя?", message: "Представтесь", preferredStyle: .alert)
-        let OkAction = UIAlertAction(title: "Ok", style: .cancel)
+        let alertController = UIAlertController(
+            title: "А как же имя?",
+            message: "Представтесь",
+            preferredStyle: .alert
+        )
+        
+        let OkAction = UIAlertAction(
+            title: "Ok",
+            style: .default
+        )
+        
         alertController.addAction(OkAction)
         present(alertController, animated: true)
         
