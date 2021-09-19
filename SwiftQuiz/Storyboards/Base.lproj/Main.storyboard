@@ -146,16 +146,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FbY-fm-TiG">
-                                <rect key="frame" x="60" y="234" width="201" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="ZDh-27-6zp">
+                                <rect key="frame" x="16" y="68" width="288" height="337.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HoK-n4-EmM">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HoK-n4-EmM" secondAttribute="height" multiplier="1:1" id="aPB-Kd-fjF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FbY-fm-TiG">
+                                        <rect key="frame" x="0.0" y="317" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUM-1d-rv7">
+                                <rect key="frame" x="241" y="489" width="63" height="30"/>
+                                <state key="normal" title="Try again"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BA7-bL-KWn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZDh-27-6zp" firstAttribute="top" secondItem="BA7-bL-KWn" secondAttribute="top" constant="68" id="9MK-uQ-fa3"/>
+                            <constraint firstItem="ZDh-27-6zp" firstAttribute="leading" secondItem="BA7-bL-KWn" secondAttribute="leading" constant="16" id="OEO-fi-1Td"/>
+                            <constraint firstItem="BA7-bL-KWn" firstAttribute="trailing" secondItem="WUM-1d-rv7" secondAttribute="trailing" constant="16" id="ThK-fr-GJH"/>
+                            <constraint firstItem="BA7-bL-KWn" firstAttribute="trailing" secondItem="ZDh-27-6zp" secondAttribute="trailing" constant="16" id="jF3-HD-NRa"/>
+                            <constraint firstItem="WUM-1d-rv7" firstAttribute="width" secondItem="Tk4-d3-hxU" secondAttribute="width" multiplier="0.196875" id="x14-fB-DXa"/>
+                            <constraint firstItem="BA7-bL-KWn" firstAttribute="bottom" secondItem="WUM-1d-rv7" secondAttribute="bottom" constant="49" id="xaE-dp-b8H"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="resultTextLabel" destination="FbY-fm-TiG" id="CxK-nf-qex"/>
