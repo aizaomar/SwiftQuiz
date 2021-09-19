@@ -18,6 +18,7 @@
 		A59891EA26F1C2C700090C4E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59891E926F1C2C700090C4E /* Question.swift */; };
 		A5B39A6026F2885500CD61A0 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B39A5F26F2885500CD61A0 /* Answer.swift */; };
 		B53AF36226F12CB200EBFD88 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AF36126F12CB200EBFD88 /* QuestionViewController.swift */; };
+		B53AF36526F7253B00EBFD88 /* QuestionVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53AF36326F7253B00EBFD88 /* QuestionVC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A59891E926F1C2C700090C4E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		A5B39A5F26F2885500CD61A0 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		B53AF36126F12CB200EBFD88 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		B53AF36426F7253B00EBFD88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SwiftQuiz/Storyboards/Base.lproj/QuestionVC.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				65B42D0226F11FF10064553A /* Main.storyboard */,
+				B53AF36326F7253B00EBFD88 /* QuestionVC.storyboard */,
 				65B42D0726F11FF40064553A /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -191,6 +194,7 @@
 				65B42D0926F11FF40064553A /* LaunchScreen.storyboard in Resources */,
 				65B42D0626F11FF40064553A /* Assets.xcassets in Resources */,
 				65B42D0426F11FF10064553A /* Main.storyboard in Resources */,
+				B53AF36526F7253B00EBFD88 /* QuestionVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +232,14 @@
 				65B42D0826F11FF40064553A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B53AF36326F7253B00EBFD88 /* QuestionVC.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53AF36426F7253B00EBFD88 /* Base */,
+			);
+			name = QuestionVC.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
