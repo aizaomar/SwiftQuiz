@@ -48,6 +48,10 @@ class QuestionViewController: UIViewController {
 
 extension QuestionViewController {
     
+    @IBAction func unwindToQuestionVC(segue: UIStoryboard) {
+        
+    }
+    
     private func updateUI() {
 
         title = "Вопрос \(questionIndex + 1)/\(questions.count)"
