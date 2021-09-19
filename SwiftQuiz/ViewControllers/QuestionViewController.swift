@@ -97,11 +97,4 @@ extension QuestionViewController {
             button.tintColor = .black
         }
     }
-    
-    private func alertController() {
-        let alertController = UIAlertController(title: "Подсказка", message: "Правильный ответ", preferredStyle: .alert)
-        let OkAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-        alertController.addAction(OkAction)
-        present(alertController, animated: true, completion: nil)
-    }
 }
