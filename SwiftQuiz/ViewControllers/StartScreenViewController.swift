@@ -21,16 +21,13 @@ class StartScreenViewController: UIViewController {
         
         let defaults = UserDefaults.standard
         defaults.set(userNameTextField.text ?? "", forKey: "userName")
-        
     }
-    
     
     private func alertController() {
         let alertController = UIAlertController(title: "А как же имя?)", message: "Представьтесь, пожалуйста", preferredStyle: .alert)
         let OkAction = UIAlertAction(title: "Ok", style: .default)
         alertController.addAction(OkAction)
         present(alertController, animated: true)
-        
     }
 }
 
@@ -45,7 +42,6 @@ extension StartScreenViewController: UITextFieldDelegate {
         performSegue(withIdentifier: "showQuestionsVC", sender: nil)
         return true
     }
-    
 }
 
 
