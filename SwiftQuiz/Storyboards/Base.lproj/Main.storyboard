@@ -19,38 +19,41 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="F40FB03A-5E12-4A10-A6AB-C2014B761D56" translatesAutoresizingMaskIntoConstraints="NO" id="VZQ-dP-1gS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hOo-m4-OxD">
-                                <rect key="frame" x="30" y="289" width="315" height="89"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6o7-Gb-EgT">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkH-Yy-McO">
-                                        <rect key="frame" x="0.0" y="59" width="315" height="30"/>
-                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                        <state key="normal" title="Начать">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="startTestButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="3AS-oz-etj"/>
-                                            <segue destination="UxC-hf-Qkr" kind="presentation" id="BJL-H3-dmw"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkH-Yy-McO">
+                                <rect key="frame" x="121" y="383.5" width="133" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.74439977660932155" blue="0.45856073445160483" alpha="0.96145690513762416" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <state key="normal" title="НАЧАТЬ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.CornerRadius" value="8"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startTestButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="3AS-oz-etj"/>
+                                    <segue destination="UxC-hf-Qkr" kind="presentation" id="BJL-H3-dmw"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите имя" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6o7-Gb-EgT">
+                                <rect key="frame" x="55" y="313.5" width="265" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6o7-Gb-EgT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="DlL-8D-G98"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6o7-Gb-EgT" secondAttribute="trailing" constant="55" id="NM8-yR-lE2"/>
                             <constraint firstItem="VZQ-dP-1gS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="PFT-e6-7FT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mkH-Yy-McO" secondAttribute="trailing" constant="121" id="SZ0-Nw-0eY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VZQ-dP-1gS" secondAttribute="trailing" id="ZWF-b2-3Ub"/>
                             <constraint firstItem="VZQ-dP-1gS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aqS-lm-WG3"/>
                             <constraint firstItem="VZQ-dP-1gS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="c1Y-hI-OrZ"/>
-                            <constraint firstItem="hOo-m4-OxD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ebU-FB-fqT"/>
-                            <constraint firstItem="hOo-m4-OxD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="t6N-a5-5M7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hOo-m4-OxD" secondAttribute="trailing" constant="30" id="xfk-nL-RPI"/>
+                            <constraint firstItem="mkH-Yy-McO" firstAttribute="top" secondItem="6o7-Gb-EgT" secondAttribute="bottom" constant="30" id="d8o-hg-vdT"/>
+                            <constraint firstItem="6o7-Gb-EgT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qfm-q4-P9a"/>
+                            <constraint firstItem="mkH-Yy-McO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="sVe-xx-Gmj"/>
                         </constraints>
                     </view>
                     <connections>
@@ -59,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="230.43478260869566" y="92.410714285714278"/>
+            <point key="canvasLocation" x="229.59999999999999" y="92.203898050974516"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8wH-9c-o3e">
@@ -94,9 +97,6 @@
         <image name="F40FB03A-5E12-4A10-A6AB-C2014B761D56" width="1080" height="1920"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
