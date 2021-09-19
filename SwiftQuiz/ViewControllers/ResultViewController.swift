@@ -8,7 +8,7 @@
 import UIKit
 
 enum PictureType: String {
-    case badscore = "SadJpeg"
+    case badscore
     case averagescore
     case perfectscore
 }

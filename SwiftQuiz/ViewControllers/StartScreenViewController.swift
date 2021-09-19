@@ -21,5 +21,3 @@ class StartScreenViewController: UIViewController {
 
 
 
-//  let defaults = UserDefaults.standard
-//  let userName = defaults.string(forKey: "userName") ?? ""
