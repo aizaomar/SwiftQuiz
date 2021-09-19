@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,19 +13,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="StartScreenViewController" customModule="SwiftQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="F40FB03A-5E12-4A10-A6AB-C2014B761D56" translatesAutoresizingMaskIntoConstraints="NO" id="VZQ-dP-1gS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hOo-m4-OxD">
-                                <rect key="frame" x="30" y="239.5" width="260" height="89"/>
+                                <rect key="frame" x="30" y="289" width="315" height="89"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6o7-Gb-EgT">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkH-Yy-McO">
-                                        <rect key="frame" x="0.0" y="59" width="260" height="30"/>
+                                        <rect key="frame" x="0.0" y="59" width="315" height="30"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <state key="normal" title="Начать">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -40,6 +43,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="VZQ-dP-1gS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="PFT-e6-7FT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VZQ-dP-1gS" secondAttribute="trailing" id="ZWF-b2-3Ub"/>
+                            <constraint firstItem="VZQ-dP-1gS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aqS-lm-WG3"/>
+                            <constraint firstItem="VZQ-dP-1gS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="c1Y-hI-OrZ"/>
                             <constraint firstItem="hOo-m4-OxD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ebU-FB-fqT"/>
                             <constraint firstItem="hOo-m4-OxD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="t6N-a5-5M7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hOo-m4-OxD" secondAttribute="trailing" constant="30" id="xfk-nL-RPI"/>
@@ -48,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="232.5" y="92.957746478873247"/>
+            <point key="canvasLocation" x="230.43478260869566" y="92.410714285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8wH-9c-o3e">
@@ -56,7 +63,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="UxC-hf-Qkr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zpz-UH-vbJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -80,6 +87,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="F40FB03A-5E12-4A10-A6AB-C2014B761D56" width="1080" height="1920"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
