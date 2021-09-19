@@ -12,11 +12,11 @@ class StartScreenViewController: UIViewController {
     @IBOutlet var userNameTextField: UITextField!
     
     @IBAction func startTestButtonPressed() {
-       
+        
         if userNameTextField.text == "" {
             alertController()
         } else {
-        performSegue(withIdentifier: "showQuestionsVC", sender: nil)
+            performSegue(withIdentifier: "showQuestionsVC", sender: nil)
         }
         
         let defaults = UserDefaults.standard
@@ -26,7 +26,7 @@ class StartScreenViewController: UIViewController {
     
     
     private func alertController() {
-        let alertController = UIAlertController(title: "А как же имя?", message: "Представтесь", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "А как же имя?)", message: "Представьтесь, пожалуйста", preferredStyle: .alert)
         let OkAction = UIAlertAction(title: "Ok", style: .default)
         alertController.addAction(OkAction)
         present(alertController, animated: true)
@@ -41,11 +41,11 @@ extension StartScreenViewController: UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-            startTestButtonPressed()
-            performSegue(withIdentifier: "showQuestionsVC", sender: nil)
+        startTestButtonPressed()
+        performSegue(withIdentifier: "showQuestionsVC", sender: nil)
         return true
     }
-
-    }
+    
+}
 
 
