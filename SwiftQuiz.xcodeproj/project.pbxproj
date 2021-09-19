@@ -19,6 +19,8 @@
 		A5B39A6026F2885500CD61A0 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B39A5F26F2885500CD61A0 /* Answer.swift */; };
 		B53AF36226F12CB200EBFD88 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AF36126F12CB200EBFD88 /* QuestionViewController.swift */; };
 		B53AF36526F7253B00EBFD88 /* QuestionVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53AF36326F7253B00EBFD88 /* QuestionVC.storyboard */; };
+		BF408E9326F7349300EB2195 /* ResultVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF408E9226F7349300EB2195 /* ResultVC.storyboard */; };
+		BF8D424926F12F5D00753712 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D424826F12F5D00753712 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		A5B39A5F26F2885500CD61A0 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		B53AF36126F12CB200EBFD88 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		B53AF36426F7253B00EBFD88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SwiftQuiz/Storyboards/Base.lproj/QuestionVC.storyboard; sourceTree = "<group>"; };
+		BF408E9226F7349300EB2195 /* ResultVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResultVC.storyboard; sourceTree = "<group>"; };
+		BF8D424826F12F5D00753712 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 		65B42D1126F120B50064553A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BF8D424826F12F5D00753712 /* ResultViewController.swift */,
 				B53AF36126F12CB200EBFD88 /* QuestionViewController.swift */,
 				6597C91826F3664400AFFB6A /* StartScreenViewController.swift */,
 			);
@@ -103,6 +108,7 @@
 			children = (
 				65B42D0226F11FF10064553A /* Main.storyboard */,
 				B53AF36326F7253B00EBFD88 /* QuestionVC.storyboard */,
+				BF408E9226F7349300EB2195 /* ResultVC.storyboard */,
 				65B42D0726F11FF40064553A /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -192,6 +198,7 @@
 			files = (
 				65B42D1926F12A630064553A /* .gitignore in Resources */,
 				65B42D0926F11FF40064553A /* LaunchScreen.storyboard in Resources */,
+				BF408E9326F7349300EB2195 /* ResultVC.storyboard in Resources */,
 				65B42D0626F11FF40064553A /* Assets.xcassets in Resources */,
 				65B42D0426F11FF10064553A /* Main.storyboard in Resources */,
 				B53AF36526F7253B00EBFD88 /* QuestionVC.storyboard in Resources */,
@@ -211,6 +218,7 @@
 				6597C91926F3664400AFFB6A /* StartScreenViewController.swift in Sources */,
 				65B42CFD26F11FF10064553A /* AppDelegate.swift in Sources */,
 				65B42CFF26F11FF10064553A /* SceneDelegate.swift in Sources */,
+				BF8D424926F12F5D00753712 /* ResultViewController.swift in Sources */,
 				B53AF36226F12CB200EBFD88 /* QuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

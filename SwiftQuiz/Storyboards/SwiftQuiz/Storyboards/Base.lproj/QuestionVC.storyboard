@@ -32,28 +32,28 @@
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="59.5"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="answerButtonsTapper:" destination="btz-k4-3u1" eventType="touchUpInside" id="rdH-rO-ADL"/>
+                                            <action selector="answerButtonsTapped:" destination="btz-k4-3u1" eventType="touchUpInside" id="rfU-cz-KIc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBU-Lq-Ylr">
                                         <rect key="frame" x="0.0" y="69.5" width="382" height="60"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="answerButtonsTapper:" destination="btz-k4-3u1" eventType="touchUpInside" id="QPf-Pl-s4e"/>
+                                            <action selector="answerButtonsTapped:" destination="btz-k4-3u1" eventType="touchUpInside" id="ktk-ku-Mse"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNs-wf-CVi">
                                         <rect key="frame" x="0.0" y="139.5" width="382" height="59.5"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="answerButtonsTapper:" destination="btz-k4-3u1" eventType="touchUpInside" id="yNk-hH-9Om"/>
+                                            <action selector="answerButtonsTapped:" destination="btz-k4-3u1" eventType="touchUpInside" id="cLz-Ku-SND"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSM-gB-BbW">
                                         <rect key="frame" x="0.0" y="209" width="382" height="59.5"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="answerButtonsTapper:" destination="btz-k4-3u1" eventType="touchUpInside" id="rPe-FJ-M5z"/>
+                                            <action selector="answerButtonsTapped:" destination="btz-k4-3u1" eventType="touchUpInside" id="fTf-lb-VeD"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -83,20 +83,20 @@
                         <outletCollection property="answersButton" destination="PBU-Lq-Ylr" collectionClass="NSMutableArray" id="FWq-FC-d4q"/>
                         <outletCollection property="answersButton" destination="mNs-wf-CVi" collectionClass="NSMutableArray" id="zsf-5C-q7i"/>
                         <outletCollection property="answersButton" destination="iSM-gB-BbW" collectionClass="NSMutableArray" id="be8-Lv-kDR"/>
-                        <segue destination="0yg-ne-bvX" kind="presentation" identifier="showResult" modalPresentationStyle="fullScreen" id="kgD-J3-wFm"/>
+                        <segue destination="aP5-lT-lJu" kind="presentation" identifier="showResult" modalPresentationStyle="fullScreen" id="3Cd-YT-g3r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5C-25-Qpe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1673.913043478261" y="93.75"/>
         </scene>
-        <!--UIViewController-MNA-oR-nHn-->
-        <scene sceneID="l3A-Ru-BFm">
+        <!--ResultVC-->
+        <scene sceneID="y8r-DF-8kU">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-MNA-oR-nHn" id="0yg-ne-bvX" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="83p-gM-Uv7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="ResultVC" id="aP5-lT-lJu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CU5-WS-HHd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2397.1014492753625" y="93.75"/>
+            <point key="canvasLocation" x="2377" y="88"/>
         </scene>
     </scenes>
     <resources>
