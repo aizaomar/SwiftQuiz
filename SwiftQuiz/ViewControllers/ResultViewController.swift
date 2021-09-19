@@ -32,11 +32,6 @@ class ResultViewController: UIViewController {
         updateResult()
         updateUI()
     }
-    // MARK: - IB actions
-    @IBAction func tryAgainButtonPressed(_ sender: Any) {
-        dismiss(animated: true)
-    }
-    
     // MARK: - Private methods
     private func updateResult () {
         
@@ -48,8 +43,10 @@ class ResultViewController: UIViewController {
     }
         private func updateUI() {
          
+            
 //            resultPic.image = // фото из модели
-            resultTextLabel.text = "Вы ответили правильно на \(correctAnswerCount) из \(answers.count)"
+            resultTextLabel.text = ", вы ответили правильно на \(correctAnswerCount) из \(answers.count)"
+            
         }
     }
 

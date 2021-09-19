@@ -15,11 +15,11 @@ class QuestionViewController: UIViewController {
     
     @IBOutlet var answersButton: [UIButton]!
     
-    private let questions = Question.getQuestion()
+    private let questions = Question.getQuestions()
     private var questionIndex = 0
     private var answersChosen: [Answer] = []
     private var currentAnswers: [Answer] {
-        questions[questionIndex].answers
+        questions[questionIndex].answers.shuffled()
     }
     
     override func viewDidLoad() {
@@ -41,15 +41,19 @@ class QuestionViewController: UIViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let resultVC = segue.destination as? ResultViewController else { return }
-//        resultVC.answers = answersChosen
+        guard let resultVC = segue.destination as? ResultViewController else { return }
+        resultVC.answers = answersChosen
     }
 }
 
 extension QuestionViewController {
     
     @IBAction func unwindToQuestionVC(segue: UIStoryboardSegue) {
+        questionIndex = 0
+        answersChosen = []
         
+        updateUI()
+
     }
     
     private func updateUI() {
