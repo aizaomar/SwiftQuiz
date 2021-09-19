@@ -48,7 +48,7 @@ class QuestionViewController: UIViewController {
 
 extension QuestionViewController {
     
-    @IBAction func unwindToQuestionVC(segue: UIStoryboard) {
+    @IBAction func unwindToQuestionVC(segue: UIStoryboardSegue) {
         
     }
     

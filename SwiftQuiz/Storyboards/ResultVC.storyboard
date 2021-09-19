@@ -38,6 +38,7 @@
                                 <state key="normal" title="Try again"/>
                                 <connections>
                                     <action selector="tryAgainButtonPressed:" destination="MNA-oR-nHn" eventType="touchUpInside" id="Koh-pO-7V9"/>
+                                    <segue destination="Tsm-Qy-SV8" kind="unwind" unwindAction="unwindToQuestionVCWithSegue:" id="fLS-hW-Dhb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,6 +59,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnA-ro-m7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Tsm-Qy-SV8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2396.25" y="92.957746478873247"/>
         </scene>
