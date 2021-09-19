@@ -166,6 +166,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUM-1d-rv7">
                                 <rect key="frame" x="241" y="489" width="63" height="30"/>
                                 <state key="normal" title="Try again"/>
+                                <connections>
+                                    <action selector="tryAgainButtonPressed:" destination="MNA-oR-nHn" eventType="touchUpInside" id="Koh-pO-7V9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BA7-bL-KWn"/>
@@ -180,6 +183,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="resultPic" destination="HoK-n4-EmM" id="cVS-wh-Hiq"/>
                         <outlet property="resultTextLabel" destination="FbY-fm-TiG" id="CxK-nf-qex"/>
                     </connections>
                 </viewController>

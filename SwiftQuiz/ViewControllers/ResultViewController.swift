@@ -7,6 +7,13 @@
 
 import UIKit
 
+enum PictureType: String {
+    case badscore
+    case averagescore
+    case pefectscore
+}
+
+
 class ResultViewController: UIViewController {
     
     // MARK: - IB Outlets
@@ -26,7 +33,8 @@ class ResultViewController: UIViewController {
         updateUI()
     }
     // MARK: - IB actions
-    @IBAction func tryAgainButton(_ sender: Any) {
+    @IBAction func tryAgainButtonPressed(_ sender: Any) {
+        dismiss(animated: true)
     }
     
     // MARK: - Private methods
@@ -39,6 +47,7 @@ class ResultViewController: UIViewController {
         }
     }
         private func updateUI() {
+         
 //            resultPic.image = // фото из модели
             resultTextLabel.text = "Вы ответили правильно на \(correctAnswerCount) из \(answers.count)"
         }
