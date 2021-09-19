@@ -7,6 +7,11 @@
 
 import UIKit
 
+//protocol StartScreenViewControllerDalegate {
+//    var userName:  String  { get }
+//
+//}
+
 enum PictureType: String {
     case badscore
     case averagescore
@@ -31,6 +36,7 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         updateResult()
         updateUI()
+   
     }
     // MARK: - Private methods
     private func updateResult () {
@@ -42,16 +48,28 @@ class ResultViewController: UIViewController {
         }
     }
         private func updateUI() {
-         
+            switch correctAnswerCount {
+            case 0...5:
+                resultPic.image = UIImage(named: "SadJpeg")
+            case 5...10:
+                resultPic.image = UIImage(named: "NormalJpeg")
+            default:
+                resultPic.image = UIImage(named: "HappyJpeg")
+            }
             
-//            resultPic.image = // фото из модели
             resultTextLabel.text = ", вы ответили правильно на \(correctAnswerCount) из \(answers.count)"
             
         }
     }
 
 
-
-
+//
+//extension ResultViewController: StartScreenViewControllerDalegate {
+//
+//    var userName: String {
+//        let defaults = UserDefaults.standard
+//        return defaults
+//}
+//
 
 
