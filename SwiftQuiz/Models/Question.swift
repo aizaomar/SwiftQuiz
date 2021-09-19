@@ -12,6 +12,16 @@ struct Question {
     let answers: [Answer]
     
     static func getQuestions() -> [Question] {
-        DataManager.shared.questions.shuffled()
+        let questions = DataManager.shared.questions.shuffled()
+        
+        var questionsWithShuflledAnswers: [Question] = []
+        
+        for question in questions {
+            let shuffle = question.answers.shuffled()
+            let title = question.title
+            let questionWithShuflledAnswers = Question(title: title, answers: shuffle)
+            questionsWithShuflledAnswers.append(questionWithShuflledAnswers)
+        }
+        return questionsWithShuflledAnswers
     }
 }
