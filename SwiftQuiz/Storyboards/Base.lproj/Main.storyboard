@@ -32,13 +32,16 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="startTestButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="3AS-oz-etj"/>
-                                    <segue destination="UxC-hf-Qkr" kind="presentation" id="BJL-H3-dmw"/>
+                                    <segue destination="UxC-hf-Qkr" kind="presentation" identifier="navVC" id="BJL-H3-dmw"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите имя" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6o7-Gb-EgT">
-                                <rect key="frame" x="55" y="313.5" width="265" height="40"/>
+                                <rect key="frame" x="55" y="314" width="265" height="39.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="rhp-ar-FBm"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
