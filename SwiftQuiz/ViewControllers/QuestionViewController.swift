@@ -27,9 +27,7 @@ class QuestionViewController: UIViewController {
         updateUI()
         view.backgroundColor = .systemGray6
         questionLabel.backgroundColor = .white
-    }
-    
-    override func viewWillLayoutSubviews() {
+        
         setupButtons()
     }
     
@@ -39,10 +37,6 @@ class QuestionViewController: UIViewController {
         answersChosen.append(currentAnswer)
         
         nextQuestion()
-    }
-    
-    @IBAction func hintButtonTapped(_ sender: Any) {
-        alertController()
     }
     
     // MARK: - Navigation
@@ -92,12 +86,5 @@ extension QuestionViewController {
             button.layer.cornerRadius = 15
             button.tintColor = .black
         }
-    }
-    
-    private func alertController() {
-        let alertController = UIAlertController(title: "Ответ не верный", message: "Правильный ответ", preferredStyle: .alert)
-        let OkAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-        alertController.addAction(OkAction)
-        present(alertController, animated: true, completion: nil)
     }
 }
