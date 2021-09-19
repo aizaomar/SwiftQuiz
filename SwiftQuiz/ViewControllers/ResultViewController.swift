@@ -7,11 +7,6 @@
 
 import UIKit
 
-//protocol StartScreenViewControllerDalegate {
-//    var userName:  String  { get }
-//
-//}
-
 enum PictureType: String {
     case badscore
     case averagescore
@@ -61,15 +56,3 @@ class ResultViewController: UIViewController {
             
         }
     }
-
-
-//
-//extension ResultViewController: StartScreenViewControllerDalegate {
-//
-//    var userName: String {
-//        let defaults = UserDefaults.standard
-//        return defaults
-//}
-//
-
-
