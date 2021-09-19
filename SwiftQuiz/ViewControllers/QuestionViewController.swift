@@ -19,7 +19,7 @@ class QuestionViewController: UIViewController {
     private var questionIndex = 0
     private var answersChosen: [Answer] = []
     private var currentAnswers: [Answer] {
-        questions[questionIndex].answers.shuffled()
+        questions[questionIndex].answers
     }
     
     override func viewDidLoad() {
