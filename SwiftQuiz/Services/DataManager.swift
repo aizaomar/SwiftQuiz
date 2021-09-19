@@ -18,7 +18,7 @@ class DataManager {
             Answer(title: "Полиморфизм")
         ]
         ),
-        Question(title: "Значение этого именованного участка памяти можно установить 1 раз, без возможности изменить в дальнейшем", answers: [
+        Question(title: "Значение этого именованного участка памяти можно установить 1 раз, без возможности изменить в дальнейшем.", answers: [
             Answer(title: "Константа", isCorrect: true),
             Answer(title: "Переменная"),
             Answer(title: "Лямбда"),
@@ -88,25 +88,25 @@ class DataManager {
             Answer(title: "UIView")
         ]
         ),
-        Question(title: "От какого класса наследуется UITableView", answers: [
+        Question(title: "От какого класса наследуется UITableView?", answers: [
             Answer(title: "UITextView"),
             Answer(title: "UIScrollView", isCorrect: true),
             Answer(title: "UIButton"),
             Answer(title: "UITableViewCell")
         ]
         ),
-        Question(title: "Какой будет результат выражения 9 % 5", answers: [
+        Question(title: "Какой будет результат выражения 9 % 5?", answers: [
             Answer(title: "1,8"),
             Answer(title: "4", isCorrect: true),
             Answer(title: "3"),
             Answer(title: "6")
         ]
         ),
-        Question(title: "Оператор этого диапазона задает диапазон от a до b. Исключая значение b", answers: [
-            Answer(title: "Полузамкнутого"),
-            Answer(title: "Полуоткрытого", isCorrect: true),
-            Answer(title: "Открытого"),
-            Answer(title: "Полноценного")
+        Question(title: "Какой оператор поможет сделать проваливание в следующий кейс внутри switch?", answers: [
+            Answer(title: "continue"),
+            Answer(title: "fallthrough", isCorrect: true),
+            Answer(title: "return"),
+            Answer(title: "break")
         ]
         ),
         Question(title: "Какой префиксный логический оператор инвертирует булево значение?", answers: [
