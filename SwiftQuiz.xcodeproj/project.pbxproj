@@ -20,6 +20,7 @@
 		B53AF36226F12CB200EBFD88 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AF36126F12CB200EBFD88 /* QuestionViewController.swift */; };
 		B53AF36526F7253B00EBFD88 /* QuestionVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53AF36326F7253B00EBFD88 /* QuestionVC.storyboard */; };
 		BF408E9326F7349300EB2195 /* ResultVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF408E9226F7349300EB2195 /* ResultVC.storyboard */; };
+		BF408E9626F7A7F900EB2195 /* StartScreenViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF408E9526F7A7F900EB2195 /* StartScreenViewControllerDelegate.swift */; };
 		BF8D424926F12F5D00753712 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8D424826F12F5D00753712 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		B53AF36126F12CB200EBFD88 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		B53AF36426F7253B00EBFD88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SwiftQuiz/Storyboards/Base.lproj/QuestionVC.storyboard; sourceTree = "<group>"; };
 		BF408E9226F7349300EB2195 /* ResultVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResultVC.storyboard; sourceTree = "<group>"; };
+		BF408E9526F7A7F900EB2195 /* StartScreenViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewControllerDelegate.swift; sourceTree = "<group>"; };
 		BF8D424826F12F5D00753712 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 		65B42CFB26F11FF10064553A /* SwiftQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				BF408E9426F7A7E100EB2195 /* Protocols */,
 				65B42D1126F120B50064553A /* ViewControllers */,
 				65B42D1226F120CF0064553A /* Storyboards */,
 				65B42D1426F121050064553A /* Models */,
@@ -137,6 +140,14 @@
 				12049A8F26F2831C007242D6 /* DataManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		BF408E9426F7A7E100EB2195 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BF408E9526F7A7F900EB2195 /* StartScreenViewControllerDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +230,7 @@
 				65B42CFD26F11FF10064553A /* AppDelegate.swift in Sources */,
 				65B42CFF26F11FF10064553A /* SceneDelegate.swift in Sources */,
 				BF8D424926F12F5D00753712 /* ResultViewController.swift in Sources */,
+				BF408E9626F7A7F900EB2195 /* StartScreenViewControllerDelegate.swift in Sources */,
 				B53AF36226F12CB200EBFD88 /* QuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
